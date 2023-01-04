@@ -1,5 +1,5 @@
 # Angular Document Edge Detection 
-A quick start Angular sample demonstrates how to use [Dynamsoft Document Normalizer JavaScript API](https://www.dynamsoft.com/document-normalizer/docs/introduction/?ver=latest) to detect the edges of a document and crop the document in a web application.
+The Angular sample demonstrates how to use [Dynamsoft Document Normalizer JavaScript API](https://www.dynamsoft.com/document-normalizer/docs/introduction/?ver=latest) in a web application to detect the edges of a document and crop the document 
 
 ## Development Environment
 
