@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { EdgeDetectionComponent } from './edge-detection/edge-detection.component';
-
+import { FileDetectionComponent } from './file-detection/file-detection.component';
+import { CameraDetectionComponent } from './camera-detection/camera-detection.component';
 import { DynamsoftService } from './dynamsoft.service';
 console.log('run module');
 @NgModule({
@@ -14,7 +14,8 @@ console.log('run module');
     AppComponent,
     ProductListComponent,
     TopBarComponent,
-    EdgeDetectionComponent,
+    FileDetectionComponent,
+    CameraDetectionComponent
   ],
   imports: [
     BrowserModule,

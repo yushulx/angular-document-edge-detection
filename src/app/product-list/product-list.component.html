@@ -2,8 +2,16 @@
 <div *ngFor="let product of products">
   <h3>
     <div>
-      <ng-template [ngIf]="product.id === 'edge-detection'">
-        <a [title]="product.name + ' details'" [routerLink]="['/edge-detection']">>
+      <ng-template [ngIf]="product.id === 'file-detection'">
+        <a [title]="product.name + ' details'" [routerLink]="['/file-detection']">>
+          {{ product.name }}
+        </a>
+      </ng-template>
+    </div>
+
+    <div>
+      <ng-template [ngIf]="product.id === 'camera-detection'">
+        <a [title]="product.name + ' details'" [routerLink]="['/camera-detection']">>
           {{ product.name }}
         </a>
       </ng-template>

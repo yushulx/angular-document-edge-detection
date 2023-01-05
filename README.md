@@ -49,5 +49,10 @@ typescript                      4.6.4
     ng serve
     ```
 
-    ![Angular Document Edge Detection](https://www.dynamsoft.com/codepool/img/2023/01/angular-document-edge-detection.png)
+    **Image File**
+    ![Angular Document Edge Detection from image file](https://www.dynamsoft.com/codepool/img/2023/01/angular-document-edge-detection.png)
+
+    **Camera**
+    ![Angular Document Edge Detection from camera stream](https://www.dynamsoft.com/codepool/img/2023/01/angular-document-edge-detection-camera.png)
+
 

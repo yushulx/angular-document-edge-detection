@@ -6,8 +6,13 @@ export interface Product {
 
 export const products = [
   {
-    id: 'edge-detection',
-    name: 'Document Edge Detection',
+    id: 'file-detection',
+    name: 'Document Edge Detection (File)',
+    description: 'Normalize the document with edge detection',
+  },
+  {
+    id: 'camera-detection',
+    name: 'Document Edge Detection (Camera)',
     description: 'Normalize the document with edge detection',
   },
 ];

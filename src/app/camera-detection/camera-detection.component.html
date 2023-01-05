@@ -1,0 +1,34 @@
+<div id="document-scanner">
+    <span id="loading-status" style="font-size:x-large" [hidden]="isLoaded">Loading Library...</span>
+    <br />
+    <div class="row">
+
+        <label for="binary"> <input type="radio" name="templates" value="binary" (change)="onRadioChange($event)" />Black &
+            White </label>
+    
+    
+        <label for="grayscale"><input type="radio" name="templates" value="grayscale" (change)="onRadioChange($event)" />
+            Grayscale </label>
+    
+        <label for="color"><input type="radio" name="templates" value="color" [checked]="true"
+                (change)="onRadioChange($event)" /> Color </label>
+    </div>
+    <label for="threshold"><input id="thredshold" (change)="updateThresholdCompensation($event)" type="range" min="0" max="10" value="9" step="1">Edge Detection Threshold: <span id="ThresholdCompensationval" style="width: 12px;" [textContent]="9"></span></label>
+    <div>
+        <label for="videoSource">Video Source: 
+        <select id="videoSource" (change)="openCamera()"></select></label>
+        <button id="detectButton" (click)="detectDocument()">Start Detection</button>
+        <button id="captureButton" (click)="captureDocument()">Capture Document</button>
+    </div>
+
+    <div id="videoview">
+        <div class="dce-video-container" id="videoContainer"></div>
+        <canvas id="overlay"></canvas>
+    </div>
+
+    <div class="container">
+        <div id="resultview">
+            <canvas id="normalizedImage"></canvas>
+        </div>
+    </div>
+</div>

@@ -5,11 +5,11 @@ import { OverlayManager } from '../overlay';
 import { Template } from '../template';
 
 @Component({
-  selector: 'app-edge-detection',
-  templateUrl: './edge-detection.component.html',
-  styleUrls: ['./edge-detection.component.css']
+  selector: 'app-file-detection',
+  templateUrl: './file-detection.component.html',
+  styleUrls: ['./file-detection.component.css']
 })
-export class EdgeDetectionComponent implements OnInit {
+export class FileDetectionComponent implements OnInit {
   isLoaded = false;
   overlay: HTMLCanvasElement | undefined;
   context: CanvasRenderingContext2D | undefined;
